@@ -1,0 +1,61 @@
+/*
+    ALGORITHM
+
+    START
+        Accept one number from user as iNo
+        Display that number of * on screen using decrement
+    STOP
+*/
+
+//////////////////////////////////////////////////////////////
+//
+//  Required Header Files
+//
+//////////////////////////////////////////////////////////////
+
+#include <stdio.h>
+
+//////////////////////////////////////////////////////////////
+//
+//  Function Name : Display
+//  Description   : It is used to print * on screen using decrement
+//  Input         : Integer
+//  Output        : Void
+//  Author        : Prasanna Shamsundar Landge
+//  Date          : 21/10/2025
+//
+//////////////////////////////////////////////////////////////
+
+void Display(int iNo)
+{
+    while(iNo > 0)   // Updater
+    {
+        printf("* ");
+        iNo--;
+    }
+}
+
+//////////////////////////////////////////////////////////////
+//
+//  Entry Point Function
+//
+//////////////////////////////////////////////////////////////
+
+int main()
+{
+    int iValue = 0;
+
+    printf("Enter number: ");
+    scanf("%d", &iValue);
+
+    Display(iValue);
+
+    return 0;
+}
+
+///////////////////////////////////////////////////////////////////////////
+//
+// Testcase Succefully handle by the the application
+// Input : 4    Ouput : *  *  * *
+//
+///////////////////////////////////////////////////////////////////////////

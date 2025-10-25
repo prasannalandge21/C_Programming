@@ -1,0 +1,60 @@
+/*
+    ALGORITHM
+
+    START
+        accept two numbers as num1 and num2
+        if num1 greater than num2 then
+            return num1
+        else
+            return num2
+    STOP
+*/
+
+///////////////////////////////////////////////////////////////////////////
+//
+// Required Header files
+//
+///////////////////////////////////////////////////////////////////////////
+
+#include <stdio.h>
+
+///////////////////////////////////////////////////////////////////////////
+//
+// Function name : FindMax
+// Description : It is used to find the maximum of two numbers
+// Input : Two Integers
+// Output : Integer
+// Author : Prasanna Shamsundar Landge
+// Date : 21/10/2025
+//
+///////////////////////////////////////////////////////////////////////////
+
+int FindMax(int a, int b)
+{
+    if (a > b)
+    {
+        return a;
+    }
+    else
+    {
+        return b;
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////
+//
+// Entry Point function for the Application
+//
+///////////////////////////////////////////////////////////////////////////
+
+int main()
+{
+    int num1, num2, result;
+    printf("Enter two numbers: ");
+    scanf("%d %d", &num1, &num2);
+    result = FindMax(num1, num2);
+    printf("Maximum is: %d\n", result);
+    return 0;
+}
+
+///////////////////////////////////////////////////////////////////////////

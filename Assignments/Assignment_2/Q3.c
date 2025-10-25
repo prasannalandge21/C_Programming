@@ -1,0 +1,68 @@
+/*
+    ALGORITHM
+
+    START
+        Accept one number from user as iNo
+        If iNo is less than 10
+            Then print "Hello" on screen
+        Otherwise
+            Print "Demo" on screen
+    STOP
+*/
+
+///////////////////////////////////////////////////////////////////////////
+//
+// Required Header files
+//
+///////////////////////////////////////////////////////////////////////////
+
+#include <stdio.h>
+
+///////////////////////////////////////////////////////////////////////////
+//
+// Function name : Display
+// Description : It is used to print "Hello" if input is less than 10, otherwise it prints "Demo" on screen
+// Input : Integer
+// Output : Void
+// Author : Prasanna Shamsundar Landge
+// Date : 21/10/2025
+//
+///////////////////////////////////////////////////////////////////////////
+
+void Display(int iNo)
+{
+    if(iNo < 10)
+    {
+        printf("Hello");
+    }
+    else
+    {
+        printf("Demo");
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////
+//
+// Entry Point Function 
+//
+///////////////////////////////////////////////////////////////////////////
+
+int main()
+{
+    int iValue = 0;
+
+    printf("Enter number: ");
+    scanf("%d", &iValue);
+
+    Display(iValue);
+
+    return 0;
+}
+
+///////////////////////////////////////////////////////////////////////////
+//
+// Testcase Succefully handle by the the application
+// Input : 4   Ouput : Hello
+// Input : 12  Ouput : Demo
+//
+///////////////////////////////////////////////////////////////////////////
