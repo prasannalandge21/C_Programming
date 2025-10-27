@@ -1,0 +1,63 @@
+/*
+    ALGORITHM
+
+    START 
+        Accept distance in KM from user as iNo
+        Create one variable as iRet to store return value
+        Call KMtoMeter by passing number as iNo
+        Store the return value into iRet
+        Print the value of iRet
+    STOP
+*/
+
+///////////////////////////////////////////////////////////////////////////
+//
+// Required Header files
+//
+///////////////////////////////////////////////////////////////////////////
+
+#include<stdio.h>
+
+///////////////////////////////////////////////////////////////////////////
+//
+// Function Name: KMtoMeter
+// Description  : To convert kilometre to meter
+// Input        : Integer
+// Output       : Integer
+// Author       : Prasanna Shamsundar Landge
+// Date         : 27/10/2025
+//
+///////////////////////////////////////////////////////////////////////////
+
+int KMtoMeter(int iNo)
+{
+    // Logic
+    // 1 kilometre = 1000 Meters
+    return iNo * 1000;
+}
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Entry point function
+//
+//////////////////////////////////////////////////////////////////////////////
+
+int main()
+{
+    int iValue = 0, iRet = 0;
+    printf("Enter distance in KM\n");
+    scanf("%d",&iValue);
+    iRet = KMtoMeter(iValue);
+    printf("Distance in meters is %d\n", iRet);
+    return 0;
+}
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Test Cases Passed
+// Input : 5
+// Output : 5000
+// Input : 12
+// Output : 12000
+//
+///////////////////////////////////////////////////////////////////////////////

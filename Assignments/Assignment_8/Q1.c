@@ -1,0 +1,71 @@
+/*
+    ALGORITHM
+
+    START
+        accept number from user as iNo
+        if iNo < 50
+            print "small"
+        else if iNo >= 50 and iNo < 100
+            print "medium"
+        else
+            print "large"
+    STOP
+*/
+
+///////////////////////////////////////////////////////////////////////////
+//
+// Required Header files
+//
+///////////////////////////////////////////////////////////////////////////
+
+#include<stdio.h>
+
+///////////////////////////////////////////////////////////////////////////
+//
+// Function name : Number
+// Description : It is used to accept number from user and classify it as small, medium or large.
+// Input : Integer
+// Output : Integer
+// Author : Prasanna Shamsundar Landge
+// Date : 26/10/2025
+//
+///////////////////////////////////////////////////////////////////////////
+
+void Number(int iNo)
+{
+    if(iNo < 50)
+    {
+        printf("small\n");
+    }
+    else if(iNo >= 50 && iNo < 100)
+    {
+        printf("medium\n");
+    }
+    else
+    {
+        printf("large\n");
+    }
+}
+
+//////////////////////////////////////////////////////////////////////////
+//
+// Entry point function
+//
+//////////////////////////////////////////////////////////////////////////
+
+int main()
+{
+    int iValue = 0;
+    printf("Enter number: ");
+    scanf("%d",&iValue);
+    Number(iValue);
+    return 0;
+}
+
+///////////////////////////////////////////////////////////////////////////
+//
+// Testcase Succefully handle by the the application
+// Input : 75
+// Output : medium
+//
+////////////////////////////////////////////////////////////////////////////

@@ -1,0 +1,64 @@
+/*
+    ALGORITHM
+
+    START 
+        Accept number from user as No
+        Create one variable as iRet to store return value
+        Call DollarToINR by passing number as No
+        Store the return value into iRet
+        Print the value of iRet
+    STOP
+*/
+
+///////////////////////////////////////////////////////////////////////////
+//
+// Required Header files
+//
+///////////////////////////////////////////////////////////////////////////
+
+#include<stdio.h>
+
+///////////////////////////////////////////////////////////////////////////
+//
+// Function Name: DollarToINR
+// Description  : To convert dollar to INR
+// Input        : Integer
+// Output       : Integer
+// Author       : Prasanna Shamsundar Landge
+// Date         : 27/10/2025
+//
+///////////////////////////////////////////////////////////////////////////
+
+int DollarToINR(int iNo)
+{
+    // Logic
+    return iNo * 70;
+}
+
+///////////////////////////////////////////////////////////////////////////
+//
+// Entry point function
+//
+///////////////////////////////////////////////////////////////////////////
+
+int main()
+{
+    int iValue = 0, iRet = 0;
+    printf("Enter number of USD\n");
+    scanf("%d",&iValue);
+    iRet = DollarToINR(iValue);
+    printf("Value in INR is %d\n", iRet);
+    return 0;
+}
+
+////////////////////////////////////////////////////////////////////////
+//
+// Test Cases Passed 
+// Input : 10
+// Output : 700
+// Input : 3
+// Output : 270
+// Input : 1200
+// Output : 84000
+//
+////////////////////////////////////////////////////////////////////////

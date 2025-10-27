@@ -1,0 +1,64 @@
+/*
+    ALGORITHM
+
+    START
+        accept number from user as iNo
+        repeat from 1 to iNo
+            if current index is odd then
+                print current index
+    STOP
+*/
+
+///////////////////////////////////////////////////////////////////////////
+//
+// Required Header files
+//
+///////////////////////////////////////////////////////////////////////////
+
+#include<stdio.h>
+
+///////////////////////////////////////////////////////////////////////////
+//
+// Function name : OddDisplay
+// Description : It is used to accept number from user and print odd numbers from 1 to that
+// Input : Integer
+// Output : Odd Numbers
+// Author : Prasanna Shamsundar Landge
+// Date : 26/10/2025
+//
+///////////////////////////////////////////////////////////////////////////
+
+void OddDisplay(int iNo)
+{
+    for(int i = 1; i <= iNo; i++)
+    {
+        if(i % 2 != 0)
+        {
+            printf("%d\t", i);
+        }
+    }
+    printf("\n");
+}
+
+//////////////////////////////////////////////////////////////////////////
+// 
+// Entry point function
+//
+//////////////////////////////////////////////////////////////////////////
+
+int main()
+{
+    int iValue = 0;
+    printf("Enter number: ");
+    scanf("%d",&iValue);
+    OddDisplay(iValue);
+    return 0;
+}
+
+///////////////////////////////////////////////////////////////////////////
+//
+// Testcase Succefully handle by the the application
+// Input : 18
+// Output : 1    3    5    7    9    11    13    15    17
+//
+//////////////////////////////////////////////////////////////////////////
